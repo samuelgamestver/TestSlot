@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Slot Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 512
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: ac2ebef0e14c5094cb4878b5ac255d5a, type: 3}
+    - {fileID: 2800000, guid: c996cdd370995844b95acf6a1667fb04, type: 3}
+    - {fileID: 2800000, guid: 796f01c29ffa4954e9d547b4f1d189a1, type: 3}
+    - {fileID: 2800000, guid: 0a689ad3350ce5d42967195f8d209525, type: 3}
+    - {fileID: 2800000, guid: 357793f054c62ed438327d5cf3a54f06, type: 3}
+    - {fileID: 2800000, guid: 1eff78d1074a022419b92e69e6f99abd, type: 3}
+    - {fileID: 2800000, guid: 846c2c6f08ca0e4488b148ac4e2a6c9a, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 357793f054c62ed438327d5cf3a54f06, type: 3}
+  - {fileID: 21300000, guid: ac2ebef0e14c5094cb4878b5ac255d5a, type: 3}
+  - {fileID: 21300000, guid: 1eff78d1074a022419b92e69e6f99abd, type: 3}
+  - {fileID: 21300000, guid: 796f01c29ffa4954e9d547b4f1d189a1, type: 3}
+  - {fileID: 21300000, guid: 0a689ad3350ce5d42967195f8d209525, type: 3}
+  - {fileID: 21300000, guid: c996cdd370995844b95acf6a1667fb04, type: 3}
+  - {fileID: 21300000, guid: 846c2c6f08ca0e4488b148ac4e2a6c9a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 5
+  - 1
+  - 6
+  - 3
+  - 4
+  - 2
+  - 7
+  m_RenderDataMap: {}
+  m_Tag: Slot Atlas
+  m_IsVariant: 0
