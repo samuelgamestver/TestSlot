@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,15 +21,32 @@ public class Colomn : MonoBehaviour
 
 	private float TimeToStop;
 
+	[SerializeField] bool checkResult;
+
+	public static Action CheckResult;
+
     void Start()
     {
 		for (int p = 0; p < gameObject.transform.childCount; p++)
-			Points.Add(gameObject.transform.GetChild(p).gameObject);
+		{
+			if(gameObject.transform.GetChild(p).tag == "Point")
+				Points.Add(gameObject.transform.GetChild(p).gameObject);
+		}
     }
 
 
 	public void Pusk()
 	{
+		if(GeneratedObject.Count >0)
+		{
+			for(int i = 0; i<GeneratedObject.Count; i++)
+				Destroy(GeneratedObject[i]);
+
+			GeneratedObject.Clear();
+		}
+
+		//GeneratedObject.Clear();
+
 		play = true;
 
 		TimeToStop = Time.realtimeSinceStartup + TimeWork;
@@ -42,11 +60,12 @@ public class Colomn : MonoBehaviour
 
 			if(frame == Speed)
 			{
-				int rand = Random.Range(0, PrefSlots.Length);
+				int rand = UnityEngine.Random.Range(0, PrefSlots.Length);
 
 				GameObject InsSlot = Instantiate(PrefSlots[rand]);
 
 				InsSlot.transform.SetParent(gameObject.transform);
+				//InsSlot.transform.localPosition = Vector3.zero;
 				InsSlot.transform.localScale = Vector3.one;
 
 				GeneratedObject.Add(InsSlot);
@@ -75,7 +94,8 @@ public class Colomn : MonoBehaviour
 					GeneratedObject[gen].GetComponent<Slot>().muve = false;
 				}
 
-				Debug.Log(gameObject.name + " " + GeneratedObject[2].name);
+				if(checkResult)
+					CheckResult?.Invoke();
 			}
 		}
     }

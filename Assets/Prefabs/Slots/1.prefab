@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3269858305270903506}
   - component: {fileID: 3269858305270903507}
   - component: {fileID: 5211248608095524236}
+  - component: {fileID: 7561770582549521592}
   m_Layer: 5
   m_Name: 1
   m_TagString: Untagged
@@ -88,6 +89,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e3d73cc1a3d0740a3a9a5f02c04fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ParrentsList: []
+  PointList: []
   speed: 1
+  pusk: 0
   muve: 0
+--- !u!114 &7561770582549521592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3269858305270903505}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
